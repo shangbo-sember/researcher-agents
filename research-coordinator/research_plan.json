@@ -1,0 +1,127 @@
+{
+  "topic": "中国新能源汽车行业研究",
+  "created_at": "2026-04-15T15:25:00+08:00",
+  "completed_at": "2026-04-15T15:45:00+08:00",
+  "status": "completed",
+  "phases": [
+    {
+      "phase": 1,
+      "name": "并行信息搜集",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "search_001",
+          "agent": "searcher",
+          "task": "搜索中国新能源汽车市场规模数据（2020-2025年销量、渗透率、预测）",
+          "status": "completed",
+          "output": "search_001_market_size.md"
+        },
+        {
+          "id": "search_002",
+          "agent": "searcher",
+          "task": "搜索中国新能源汽车主要竞争玩家（比亚迪、特斯拉、蔚来、小鹏、理想等市场份额）",
+          "status": "completed",
+          "output": "search_002_competitors.md"
+        },
+        {
+          "id": "search_003",
+          "agent": "searcher",
+          "task": "搜索中国新能源汽车最新政策动向（2024-2025年补贴政策、双积分、购置税减免）",
+          "status": "completed",
+          "output": "search_003_policy.md"
+        },
+        {
+          "id": "search_004",
+          "agent": "searcher",
+          "task": "搜索中国新能源汽车技术发展趋势（电池技术、智能驾驶、充电基础设施）",
+          "status": "completed",
+          "output": "search_004_tech.md"
+        }
+      ]
+    },
+    {
+      "phase": 2,
+      "name": "数据分析",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "analysis_001",
+          "agent": "analyst",
+          "task": "分析搜集数据，提取关键指标和趋势",
+          "depends_on": ["search_001", "search_002", "search_003", "search_004"],
+          "status": "completed",
+          "output": "analysis_001_summary.md"
+        }
+      ]
+    },
+    {
+      "phase": 3,
+      "name": "专项分析",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "competitor_001",
+          "agent": "competitor_analyst",
+          "task": "深度分析中国新能源汽车竞争格局（市场集中度、差异化策略、护城河）",
+          "status": "completed",
+          "output": "competitor_001_analysis.md"
+        },
+        {
+          "id": "case_001",
+          "agent": "case_researcher",
+          "task": "找出中国新能源汽车领域3个成功案例（比亚迪、理想、小米）",
+          "status": "completed",
+          "output": "case_001_studies.md"
+        }
+      ]
+    },
+    {
+      "phase": 4,
+      "name": "报告撰写",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "write_001",
+          "agent": "writer",
+          "task": "生成完整研究报告",
+          "depends_on": ["analysis_001", "competitor_001", "case_001"],
+          "status": "completed",
+          "output": "中国新能源汽车行业研究报告_2025.md"
+        }
+      ]
+    },
+    {
+      "phase": 5,
+      "name": "质量审核",
+      "status": "completed",
+      "tasks": [
+        {
+          "id": "review_001",
+          "agent": "reviewer",
+          "task": "审核报告质量和准确性",
+          "depends_on": ["write_001"],
+          "status": "completed",
+          "output": "review_001_report.md",
+          "rating": "A+",
+          "score": 98,
+          "conclusion": "报告通过审核，质量优秀，建议正式发布"
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "raw_data": [
+      "search_001_market_size.md",
+      "search_002_competitors.md",
+      "search_003_policy.md",
+      "search_004_tech.md"
+    ],
+    "analysis": [
+      "analysis_001_summary.md",
+      "competitor_001_analysis.md",
+      "case_001_studies.md"
+    ],
+    "final_report": "中国新能源汽车行业研究报告_2025.md",
+    "review": "review_001_report.md"
+  }
+}

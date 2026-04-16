@@ -1,0 +1,239 @@
+{
+  "topic": "中国低空经济行业 - 合并后结构化数据",
+  "processing_date": "2026-04-15T16:30:00+08:00",
+  "processing_rules": {
+    "deduplication": "按URL去重，相同URL的数据点合并",
+    "conflict_marking": "同一指标不同来源标注为矛盾",
+    "reliability_ranking": "政府报告 > 研究机构 > 行业媒体"
+  },
+  "reliability_levels": {
+    "高": "政府官网、国家级行业协会、官方文件",
+    "中高": "知名研究机构、官方授权数据",
+    "中": "行业研究机构、权威媒体",
+    "中低": "商业媒体",
+    "低": "未标注来源"
+  },
+  
+  "sections": {
+    
+    "market_size": {
+      "title": "市场规模数据",
+      "sources_count": 5,
+      "unique_urls": 5,
+      "data_points": [
+        {
+          "indicator": "2023年市场规模",
+          "value": "5059.5亿元",
+          "growth": "同比增长33.8%",
+          "sources": [
+            {
+              "name": "赛迪顾问《中国低空经济发展研究报告（2024）》",
+              "url": "http://bgimg.ce.cn/xwzx/gnsz/gdxw/202404/01/t20240401_38955595.shtml",
+              "date": "2024年4月",
+              "reliability": "高",
+              "type": "研究机构"
+            },
+            {
+              "name": "中商产业研究院",
+              "url": "https://www.askci.com/news/chanye/20241218/172022273451362278336784.shtml",
+              "date": "2024年12月",
+              "reliability": "中高",
+              "type": "研究机构"
+            },
+            {
+              "name": "新华网/经济参考报",
+              "url": "https://www.xinhuanet.com/tech/20241223/e4fd8b5f752945eaa5af4db704f765a7/c.html",
+              "date": "2024年12月",
+              "reliability": "高",
+              "type": "官方媒体"
+            }
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "多源交叉验证一致"
+        },
+        {
+          "indicator": "2024年市场规模",
+          "value": "6700-9700亿元",
+          "value_alternative": ["4807亿元（艾媒咨询）"],
+          "growth": "同比增长约30-35%",
+          "sources": [
+            {
+              "name": "中商产业研究院",
+              "url": "https://www.askci.com/news/chanye/20241218/172022273451362278336784.shtml",
+              "date": "2024年12月",
+              "reliability": "中高",
+              "type": "研究机构"
+            },
+            {
+              "name": "艾媒咨询",
+              "url": "https://t.cj.sina.com.cn/articles/view/1850460740/6e4bca44019013sc0",
+              "date": "2024年",
+              "reliability": "中",
+              "type": "研究机构"
+            }
+          ],
+          "conflict_status": "⚠️ 数据差异",
+          "conflict_details": {
+            "value_range": {
+              "zhongshang": "6700-9700亿元",
+              "iimedia": "4807亿元",
+              "analysis": "统计口径差异，中商为预测区间，艾媒为保守估算"
+            }
+          },
+          "notes": "采用中商产业研究院区间值，更符合行业增长趋势"
+        },
+        {
+          "indicator": "2025年市场规模预测",
+          "value": "1.5万亿元",
+          "sources": [
+            {
+              "name": "中国民航局",
+              "url": "https://www.xinhuanet.com/tech/20241223/e4fd8b5f752945eaa5af4db704f765a7/c.html",
+              "date": "2024年",
+              "reliability": "高",
+              "type": "政府机构"
+            },
+            {
+              "name": "中商产业研究院",
+              "url": "https://www.askci.com/news/chanye/20241218/172022273451362278336784.shtml",
+              "date": "2024年12月",
+              "reliability": "中高",
+              "type": "研究机构"
+            },
+            {
+              "name": "证券日报/低空融合发展创新实验室",
+              "url": "http://www.zqrb.cn/finance/hangyedongtai/2025-11-24/A1763983192429.html",
+              "date": "2025年",
+              "reliability": "中高",
+              "type": "研究机构"
+            }
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "民航局官方预测，可靠性最高"
+        },
+        {
+          "indicator": "2030年市场规模预测",
+          "value": "2-3.5万亿元",
+          "value_alternative": ["3.5万亿元（2035年）"],
+          "sources": [
+            {
+              "name": "中国民航局",
+              "url": "https://www.xinhuanet.com/tech/20241223/e4fd8b5f752945eaa5af4db704f765a7/c.html",
+              "date": "2024年",
+              "reliability": "高",
+              "type": "政府机构"
+            },
+            {
+              "name": "艾媒咨询",
+              "url": "https://t.cj.sina.com.cn/articles/view/1850460740/6e4bca44019013sc0",
+              "date": "2024年",
+              "reliability": "中",
+              "type": "研究机构"
+            }
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "不同预测区间，民航局2万亿，艾媒咨询3.5万亿（2035年）"
+        }
+      ]
+    },
+    
+    "competitors": {
+      "title": "竞争玩家数据",
+      "sources_count": 4,
+      "unique_urls": 4,
+      "data_points": [
+        {
+          "indicator": "亿航智能2024年交付增长",
+          "value": "超300%",
+          "achievement": "全球首个eVTOL'三证'齐全（TC/PC/AC）",
+          "sources": [
+            {
+              "name": "国泰君安研报/公司公告",
+              "url": "https://www.zhihu.com/tardis/zm/art/719554912",
+              "date": "2024年",
+              "reliability": "中高",
+              "type": "券商研报"
+            },
+            {
+              "name": "腾讯新闻",
+              "url": "https://news.qq.com/rain/a/20250901A05VZZ00",
+              "date": "2025年",
+              "reliability": "中",
+              "type": "行业媒体"
+            }
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "全球取证领先，商业化先发优势"
+        },
+        {
+          "indicator": "峰飞航空/沃飞长空订单",
+          "value": "各获工银金租120架意向订单",
+          "total": "240架意向订单",
+          "sources": [
+            {
+              "name": "航空产业网/搜狐",
+              "url": "https://www.sohu.com/a/877474649_122372782",
+              "date": "2025年",
+              "reliability": "中",
+              "type": "行业媒体"
+            },
+            {
+              "name": "WXRedian",
+              "url": "https://wxredian.com/art?id=eafb48eea2b9c589c3a9838dca0e39c3",
+              "date": "2025年",
+              "reliability": "中",
+              "type": "行业媒体"
+            }
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "国内eVTOL单笔最大订单记录"
+        },
+        {
+          "indicator": "大疆全球市场份额",
+          "value": "70%+",
+          "domain": "消费级无人机",
+          "sources": [
+            {
+              "name": "中商产业研究院",
+              "url": "https://www.askci.com/news/20250327/180428274306985583314842.shtml",
+              "date": "2025年",
+              "reliability": "中高",
+              "type": "研究机构"
+            }
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "全球绝对龙头，技术、品牌、生态全面领先"
+        },
+        {
+          "indicator": "美团无人机累计订单",
+          "value": "超10万单",
+          "routes": "30+条常规航线",
+          "cities": "深圳、上海、北京等",
+          "sources": [
+            {
+              "name": "腾讯研究院/界面新闻",
+              "url": "https://www.jiemian.com/article/12367447.html",
+              "date": "2024年",
+              "reliability": "中",
+              "type": "行业媒体"
+            }
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "国内首个常态化运营的城市无人机配送"
+        }
+      ]
+    },
+    
+    "policy": {
+      "title": "政策动向数据",
+      "sources_count": 6,
+      "unique_urls": 6,
+      "data_points": [
+        {
+          "indicator": "低空经济写入政府工作报告",
+          "time": "2024年3月",
+          "positioning": "新增长引擎",
+          "sources": [
+            {
+              "name": "中国政府网/新华网",
+              "url": "https://www.gov.cn

@@ -1,0 +1,381 @@
+{
+  "topic": "中国新能源汽车行业 - 合并后结构化数据",
+  "processing_date": "2026-04-15T15:50:00+08:00",
+  "processing_rules": {
+    "deduplication": "按URL去重，相同URL的数据点合并",
+    "conflict_marking": "同一指标不同来源标注为矛盾",
+    "reliability_ranking": "政府报告 > 行业协会 > 研究机构 > 行业媒体"
+  },
+  "reliability_levels": {
+    "高": "政府官网、国家级行业协会",
+    "中高": "知名研究机构、官方授权数据",
+    "中": "行业研究机构、权威媒体",
+    "中低": "商业媒体、自媒体",
+    "低": "未标注来源、匿名消息"
+  },
+  
+  "sections": {
+    
+    "market_size": {
+      "title": "市场规模数据",
+      "sources_count": 6,
+      "unique_urls": 6,
+      "data_points": [
+        {
+          "indicator": "2022年销量",
+          "value": "688.7万辆",
+          "growth": "同比增长93.4%",
+          "penetration": "市场占有率25.6%",
+          "sources": [{
+            "name": "中国汽车工业协会（中汽协）",
+            "url": "https://www.gov.cn/xinwen/2023-01/24/content_5738622.htm",
+            "date": "2023年1月",
+            "reliability": "高",
+            "type": "政府报告"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "官方权威数据"
+        },
+        {
+          "indicator": "2023年销量",
+          "value": "949.5万辆",
+          "growth": "同比增长37.9%",
+          "penetration": "市场占有率31.6%",
+          "sources": [{
+            "name": "中国汽车工业协会（中汽协）",
+            "url": "https://www.gov.cn/yaowen/liebiao/202401/content_6925448.htm",
+            "date": "2024年1月",
+            "reliability": "高",
+            "type": "政府报告"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "官方权威数据"
+        },
+        {
+          "indicator": "2024年销量",
+          "value": "1286.6万辆",
+          "value_alternative": ["1286万辆", "超1286万辆"],
+          "growth": "同比增长35.5%",
+          "penetration": "超40%（政府口径）/ 47.6%-50%（行业口径）",
+          "sources": [
+            {"name": "中国汽车工业协会", "url": "https://www.gov.cn/zhengce/jiedu/tujie/202501/content_6998287.htm", "date": "2025年1月", "reliability": "高", "type": "政府报告"},
+            {"name": "EVTank", "url": "http://www.evtank.cn/DownloadDetail.aspx?ID=596", "date": "2025年1月", "reliability": "中", "type": "研究机构"},
+            {"name": "乘联会", "url": "https://news.qq.com/rain/a/20250115A030EY00", "date": "2025年1月", "reliability": "中高", "type": "行业协会"}
+          ],
+          "conflict_status": "⚠️ 轻微差异",
+          "conflict_details": "渗透率：政府报告'超40%'为保守表述，行业数据'47.6%-50%'为详细统计（年度平均vs月度峰值）",
+          "notes": "销量数据一致，渗透率差异为统计口径不同"
+        },
+        {
+          "indicator": "2023年市场规模（金额）",
+          "value": "约3208亿美元",
+          "growth": "近五年复合增速42%",
+          "sources": [{
+            "name": "前瞻产业研究院",
+            "url": "https://x.qianzhan.com/xcharts/detail/c6a0c7604308c6ea.html",
+            "date": "2024年",
+            "reliability": "中",
+            "type": "研究机构"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "研究机构估算"
+        },
+        {
+          "indicator": "2024年市场规模（金额）",
+          "value": "1.84万亿元",
+          "value_alternative": ["2.31万亿元（2025年预测）"],
+          "growth": "同比增长60%",
+          "sources": [
+            {"name": "艾媒咨询", "url": "https://www.163.com/dy/article/JGN779SJ0511A1Q1.html", "date": "2024年", "reliability": "中", "type": "研究机构"},
+            {"name": "IDC", "url": "https://my.idc.com/getdoc.jsp?containerId=prCHC53263725", "date": "2025年", "reliability": "中高", "type": "研究机构"}
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "不同机构估算方法不同"
+        },
+        {
+          "indicator": "2024年全球占比",
+          "value": "70.5%",
+          "change": "较2023年64.8%提升5.7个百分点",
+          "sources": [{
+            "name": "EVTank",
+            "url": "http://www.evtank.cn/DownloadDetail.aspx?ID=596",
+            "date": "2025年1月",
+            "reliability": "中",
+            "type": "研究机构"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "研究机构数据"
+        }
+      ]
+    },
+    
+    "competitors": {
+      "title": "竞争玩家数据",
+      "sources_count": 4,
+      "unique_urls": 4,
+      "data_points": [
+        {
+          "indicator": "2024年比亚迪销量",
+          "value": "371.8万辆（国内零售）",
+          "value_alternative": ["427万辆（含出口）"],
+          "share": "34.1%市场份额",
+          "growth": "同比增长41%",
+          "sources": [
+            {"name": "乘联会", "url": "https://news.qq.com/rain/a/20250115A030EY00", "date": "2025年1月", "reliability": "中高", "type": "行业协会"},
+            {"name": "中汽协", "url": "https://www.sohu.com/a/844214347_121255906", "date": "2024年", "reliability": "高", "type": "行业协会"}
+          ],
+          "conflict_status": "⚠️ 统计口径差异",
+          "conflict_details": "371.8万辆=国内零售，427万辆=全球总销量（含出口41.7万辆）",
+          "notes": "非矛盾，为不同统计维度"
+        },
+        {
+          "indicator": "2024年理想汽车销量",
+          "value": "50.05万辆",
+          "position": "新势力第一，行业第六",
+          "growth": "同比增长33%",
+          "sources": [{
+            "name": "乘联会/公司公告",
+            "url": "https://www.163.com/dy/article/JL5L1E1J0541B741.html",
+            "date": "2025年1月",
+            "reliability": "高",
+            "type": "官方数据"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "新势力首家年销破50万"
+        },
+        {
+          "indicator": "2024年赛力斯销量",
+          "value": "42万辆+",
+          "growth": "同比增长269.8%",
+          "position": "行业第八",
+          "sources": [{
+            "name": "中商产业研究院/乘联会",
+            "url": "https://www.askci.com/news/20250118/151823273718470263733106.shtml",
+            "date": "2025年1月",
+            "reliability": "中高",
+            "type": "研究机构"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "增速第一，华为赋能效应显著"
+        },
+        {
+          "indicator": "2024年小米汽车销量",
+          "value": "13.5万辆",
+          "period": "首年交付（9个月）",
+          "sources": [{
+            "name": "界面新闻",
+            "url": "https://www.jiemian.com/article/12367447.html",
+            "date": "2024年",
+            "reliability": "中",
+            "type": "行业媒体"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "跨界造车现象级成功"
+        },
+        {
+          "indicator": "2024年蔚来销量",
+          "value": "22.1万辆",
+          "growth": "同比增长87%",
+          "sources": [{
+            "name": "公司公告/媒体",
+            "url": "https://www.sohu.com/a/844214347_121255906",
+            "date": "2024年",
+            "reliability": "中",
+            "type": "行业媒体"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "高端定位，换电模式"
+        },
+        {
+          "indicator": "2024年小鹏销量",
+          "value": "19万辆+",
+          "sources": [{
+            "name": "媒体综合",
+            "url": "https://www.163.com/dy/article/JL5L1E1J0541B741.html",
+            "date": "2025年1月",
+            "reliability": "中",
+            "type": "行业媒体"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "智驾技术领先"
+        }
+      ]
+    },
+    
+    "policy": {
+      "title": "政策动向数据",
+      "sources_count": 5,
+      "unique_urls": 5,
+      "data_points": [
+        {
+          "indicator": "购置税免征政策",
+          "period": "2024.1.1-2025.12.31",
+          "value": "免征购置税，每辆免税额≤3万元",
+          "sources": [{
+            "name": "财政部/税务总局/工信部公告2023年第10号",
+            "url": "http://www.chinatax.gov.cn/chinatax/n371/c5205526/content.html",
+            "date": "2023年6月",
+            "reliability": "高",
+            "type": "政府报告"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "官方政策文件"
+        },
+        {
+          "indicator": "购置税减半政策",
+          "period": "2026.1.1-2027.12.31",
+          "value": "减半征收，每辆减税额≤1.5万元",
+          "sources": [
+            {"name": "财政部公告2023年第10号", "url": "http://www.chinatax.gov.cn/chinatax/n371/c5205526/content.html", "date": "2023年6月", "reliability": "高", "type": "政府报告"},
+            {"name": "中国经济网", "url": "http://www.ce.cn/xwzx/gnsz/gdxw/202511/t20251110_2569991.shtml", "date": "2025年11月", "reliability": "中", "type": "行业媒体"}
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "政策退坡时间表明确"
+        },
+        {
+          "indicator": "以旧换新补贴",
+          "value": "报废国四燃油车购新能源车补贴2万元/辆",
+          "sources": [{
+            "name": "商务部/政策汇总",
+            "url": "http://www.chinaiol.com/upload/file/20250227/6387625393563026423037047.pdf",
+            "date": "2025年2月",
+            "reliability": "中高",
+            "type": "政府报告"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "2024-2025年刺激政策"
+        },
+        {
+          "indicator": "双积分政策",
+          "value": "2024年达标比例约18%",
+          "sources": [{
+            "name": "工信部",
+            "url": "https://www.gov.cn/zhengce/jiedu/tujie/202501/content_6998287.htm",
+            "date": "2025年1月",
+            "reliability": "高",
+            "type": "政府报告"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "持续推动传统车企电动化"
+        }
+      ]
+    },
+    
+    "technology": {
+      "title": "技术趋势数据",
+      "sources_count": 6,
+      "unique_urls": 6,
+      "data_points": [
+        {
+          "indicator": "800V高压平台渗透率",
+          "value_2022": "2.5%",
+          "value_2024": "覆盖38%新发布车型",
+          "value_2025_forecast": "15%渗透率",
+          "sources": [
+            {"name": "佐思汽研", "url": "https://news.qq.com/rain/a/20250729A02BM600", "date": "2025年7月", "reliability": "中", "type": "研究机构"},
+            {"name": "信达证券", "url": "https://zhuanlan.zhihu.com/p/589327585", "date": "2024年", "reliability": "中", "type": "研究机构"},
+            {"name": "21ic电子网", "url": "https://www.21ic.com/a/996144.html", "date": "2025年", "reliability": "中", "type": "行业媒体"}
+          ],
+          "conflict_status": "无矛盾",
+          "notes": "从高端向20万级市场普及"
+        },
+        {
+          "indicator": "电池技术路线占比",
+          "value_lfp": "磷酸铁锂约70%（主导中低端）",
+          "value_ncm": "三元锂约30%（40万+车型超60%）",
+          "sources": [{
+            "name": "QuestAuto/界面新闻",
+            "url": "https://www.jiemian.com/article/12367447.html",
+            "date": "2024年",
+            "reliability": "中",
+            "type": "行业媒体"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "成本与安全vs能量密度权衡"
+        },
+        {
+          "indicator": "智能驾驶普及率",
+          "value_l2": "L2级已规模化普及",
+          "value_no_chip": "未配置辅助驾驶芯片车型仍占76.8%",
+          "sources": [{
+            "name": "QuestMobile/界面新闻",
+            "url": "https://www.jiemian.com/article/12367447.html",
+            "date": "2024年",
+            "reliability": "中",
+            "type": "行业媒体"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "L2成标配，L3仍处验证阶段"
+        },
+        {
+          "indicator": "充电桩使用效率",
+          "value": "TOP品牌单桩充电次数超百次/月",
+          "charging_time": "多数品牌单桩单次充电<1小时",
+          "sources": [{
+            "name": "QuestAuto",
+            "url": "https://www.jiemian.com/article/12367447.html",
+            "date": "2024年",
+            "reliability": "中",
+            "type": "研究机构"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "头部集中，前五品牌渗透率超70%"
+        },
+        {
+          "indicator": "高压部件市场规模",
+          "value_2024": "4793.1亿元（全球）",
+          "sources": [{
+            "name": "华经产业研究院",
+            "url": "https://www.huaon.com/channel/trend/1085797.html",
+            "date": "2025年",
+            "reliability": "中",
+            "type": "研究机构"
+          }],
+          "conflict_status": "无矛盾",
+          "notes": "随800V普及持续增长"
+        }
+      ]
+    }
+  },
+  
+  "conflict_summary": {
+    "total_conflicts": 2,
+    "conflicts": [
+      {
+        "indicator": "2024年市场渗透率",
+        "conflict_type": "统计口径差异",
+        "values": {"政府报告": "超40%", "行业数据": "47.6%-50%"},
+        "resolution": "采用47.6%为年度平均，50%为月度峰值，两者均准确"
+      },
+      {
+        "indicator": "2024年比亚迪销量",
+        "conflict_type": "统计范围差异",
+        "values": {"国内零售": "371.8万辆", "全球总销量": "427万辆"},
+        "resolution": "两者均准确，差异为是否包含出口（41.7万辆）"
+      }
+    ],
+    "notes": "所有矛盾均为统计口径/范围差异，非数据错误"
+  },
+  
+  "reliability_summary": {
+    "高可靠性来源": [
+      "中国政府网 (gov.cn) - 5条",
+      "中国汽车工业协会 - 3条",
+      "乘联会 - 3条",
+      "财政部/税务总局 - 2条"
+    ],
+    "中高可靠性来源": [
+      "IDC - 1条",
+      "中商产业研究院 - 1条"
+    ],
+    "中可靠性来源": [
+      "EVTank - 1条",
+      "前瞻产业研究院 - 1条",
+      "艾媒咨询 - 1条",
+      "华经产业研究院 - 1条",
+      "界面新闻 - 3条"
+    ]
+  },
+  
+  "summary": "2022-2024年中国新能源汽车销量从688.7万辆增至1286.6万辆，年复合增长率约36%。市场渗透率从25.6%提升至47.6%，连续8年全球销量第一，2024年占全球销量70.5%。比亚迪以371.8万辆（34.1%份额）稳居第一，理想50万辆领跑新势力。政策方面，2024-2025年免征购置税，2026年起减半征收。技术方面，800V高压平台2025年渗透率预计15%，L2级智驾已成标配。"
+}
